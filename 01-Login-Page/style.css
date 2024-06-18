@@ -21,7 +21,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .login-form:hover {
-  box-shadow: 0 10px 25px white;
+  box-shadow: 0 10px 250px white;
 }
 .login-form h2 {
   text-align: center;
