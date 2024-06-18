@@ -13,12 +13,15 @@ body {
   width: 420px;
   height: 460px;
   background-color: transparent;
-  margin-top: 9%;
-  margin-left: 37%;
-  background: rgba(160, 156, 255, 0.4); /* translucent background color */
+  margin: 9% auto 0 auto; /* vertical average */
+  background: rgba(160, 156, 255, 0.4); /* translucent background */
   backdrop-filter: blur(4px); /* blur background */
   border-radius: 20px;
+  border: 1px solid white;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-form:hover {
+  box-shadow: 0 10px 25px white;
 }
 .login-form h2 {
   text-align: center;
@@ -69,9 +72,9 @@ body {
   text-decoration: underline;
   color: black;
 }
-.frgt-pswrd:visited{
-    text-decoration: none;
-    color: rgb(40, 36, 36);
+.frgt-pswrd:visited {
+  text-decoration: none;
+  color: rgb(40, 36, 36);
 }
 .frgt-pswrd:active {
   color: white;
@@ -107,10 +110,10 @@ button:active {
   text-decoration: underline;
   color: black;
 }
-.register:visited{
-    text-decoration: none;
-    color: rgb(40, 36, 36);
+.register:visited {
+  text-decoration: none;
+  color: rgb(40, 36, 36);
 }
-.register:active{
-    color: white;
+.register:active {
+  color: white;
 }
