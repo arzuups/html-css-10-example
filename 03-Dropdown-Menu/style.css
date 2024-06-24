@@ -57,12 +57,12 @@ body {
   text-align: left;
 }
 .dropdown ul li:hover .submenu ul li:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 .dropdown ul li:hover .submenu ul li a:hover {
-    color: #b2ff00;
+  color: #b2ff00;
 }
-.fa-angle-right{
-    font-size: 12px;
-    float: right;
+.fa-angle-right {
+  font-size: 12px;
+  float: right;
 }
