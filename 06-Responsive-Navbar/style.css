@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: black;
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+a:hover {
+  color: #ff0000;
+}
+
+/* Header */
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+.navbar .logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar .logo a:hover {
+  color: #ccc;
+}
+
+/*NAVBAR LINKS*/
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+.navbar .toggle-btn {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+.navbar .toggle-btn:hover {
+  color: #ccc;
+}
+.action-btn {
+  background-color: #ff0000;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+.action-btn:hover {
+  background-color: #b24931;
+  color: white;
+  scale: 1.05;
+}
+.action-btn:active {
+  scale: 0.95;
+}
+
+/*DROPDOWN MENU*/
+.dropdown-menu {
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.dropdown-menu li {
+    padding: 0.9rem;
+
+}
+
+/*RESPONSIVE DESIGN*/
+@media (max-width: 992px) {
+  .navbar .links,
+  .navbar .toggle-btn {
+    display: none;
+  }
+  .navbar .toggle-btn {
+    display: block;
+  }
+}
