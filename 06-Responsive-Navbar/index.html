@@ -29,10 +29,32 @@
           <li><a href="about">About</a></li>
           <li><a href="services">Services</a></li>
           <li><a href="contact">Contact</a></li>
-          <a href="#" class="action-btn">Get Started</a>
+          <li><a href="#" class="action-btn">Get Started</a></li>
         </div>
       </div>
     </header>
+    <main>
+      <section id="content">
+        <h1>Welcome to Page</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+          quod.
+        </p>
+      </section>
+    </main>
+    <script>
+      const toggleBtn = document.querySelector(".toggle-btn");
+      const toggleBtnIcon = document.querySelector(".toggle-btn i");
+      const dropDownMenu = document.querySelector(".dropdown-menu");
+
+      toggleBtn.onclick = function (params) {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
   </body>
 </html>
-
