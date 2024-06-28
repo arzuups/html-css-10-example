@@ -86,18 +86,48 @@ header {
 
 /*DROPDOWN MENU*/
 .dropdown-menu {
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    width: 300px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(15px);
-    border-radius: 10px;
-    overflow: hidden;
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown-menu.open {
+  height: 240px;
 }
 .dropdown-menu li {
-    padding: 0.9rem;
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu .action-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 
+/*CONTENT*/
+section#content {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+#content h1 {
+  -webkit-text-stroke: 2px white;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: transparent;
 }
 
 /*RESPONSIVE DESIGN*/
@@ -108,5 +138,15 @@ header {
   }
   .navbar .toggle-btn {
     display: block;
+  }
+  .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .dropdown-menu {
+    left: 2rem;
+    width: unset;
   }
 }
